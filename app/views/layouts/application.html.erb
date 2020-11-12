@@ -3,6 +3,9 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Cutive+Mono&display=swap');
+    </style>
     <title>RailsMisterCocktail</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -12,6 +15,13 @@
   </head>
 
   <body>
+    <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('/assets/header-background-image-2.jpg');">
+      <div class="container">
+        <h1> Casabar </h1>
+        <h2> Best Cocktails in town</h2>
+      </div>
+    </div>
+
     <%= yield %>
   </body>
 </html>
