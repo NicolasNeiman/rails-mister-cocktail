@@ -1,0 +1,5 @@
+<h1>Coktails</h1>
+
+<% @cocktails.each do |cocktail| %>
+  <li> <%= link_to cocktail.name, "#" %> </li>
+<% end %>
