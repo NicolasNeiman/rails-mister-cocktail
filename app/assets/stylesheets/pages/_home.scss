@@ -9,6 +9,16 @@
   background-size: cover;
   background-position: center;
   margin: 10px 10px;
+  justify-content : center;
+  align-items: center;
+  a{
+    color: white;
+    font-size : 20px;
+    text-decoration: none;
+    &:hover {
+      color: #a4a4a4;;
+    }
+  }
 }
 
 h3 {
