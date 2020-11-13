@@ -6,7 +6,7 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Cutive+Mono&display=swap');
     </style>
-    <title>RailsMisterCocktail</title>
+    <title>CasaBar</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -15,7 +15,11 @@
   </head>
 
   <body>
-    <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('/assets/header-background-image-2.jpg');">
+    <div class="banner" 
+         style="background-image: 
+                  linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), 
+                  url('https://res.cloudinary.com/detstuazh/image/upload/v1605270105/nujf2t5usjeil1guetrs.jpg');"
+    >
       <div class="container">
         <h1> Casabar </h1>
         <h2> Best Cocktails in town</h2>
@@ -25,3 +29,5 @@
     <%= yield %>
   </body>
 </html>
+
+

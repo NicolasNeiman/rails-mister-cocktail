@@ -14,7 +14,7 @@
         <% @cocktails.each do |cocktail| %>
           <div class="col-12 col-lg-4 " >
               <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                                             url(<%= cocktail.image_url %> )">
+                                             url('<%= cl_image_path cocktail.photo.key if cocktail.photo.attached? %>')">
                 <%= link_to cocktail.name, cocktail_path(cocktail) %>
               </div>
           </div>
@@ -25,16 +25,13 @@
     <div class="col-12 col-lg-4">
       <div class="row">
           <h3>Make your own Cocktail</h3>
-          
+
         <%= simple_form_for @cocktail do |f| %>
           <%= f.input :name %>
+          <%= f.input :photo, as: :file %>
           <%= f.submit %>
         <% end %>
       </div>
     </div>
-
-
-
-
   </div>
 </div>
