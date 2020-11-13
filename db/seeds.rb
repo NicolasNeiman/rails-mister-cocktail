@@ -25,6 +25,8 @@ Ingredient.create(name: "Sugar")
 Ingredient.create(name: "Sugar Syrup")
 Ingredient.create(name: "Coffee")
 Ingredient.create(name: "Coka-Cola")
+Ingredient.create(name: "Soda")
+Ingredient.create(name: "Other")
 
 ## Seed Cocktails
 require "open-uri"
